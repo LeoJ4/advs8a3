@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> jquery events 3</title>
+	<script type="text/javascript" src="jquery1.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		
+
+		$("#fname").change(function()
+		{
+				var a = $("#fname").val();
+			$("body").append("<p> You entered " +  a +  "</p>");
+		}	
+		);
+
+
+		$("#lname").change(function()
+		{
+				var a = $("#lname").val();
+			$("body").append("<p> You entered " +  a +  "</p>");
+		}	
+		);
+
+	});
+	</script>
+</head>
+<body>
+
+<div>
+
+<form>
+
+<input type = "text" id="fname" placeholder="enter first name">
+
+<input type = "text" id="lname" placeholder="enter last name">
+
+</form>
+
+</div>
+</body>
+</html>
+
